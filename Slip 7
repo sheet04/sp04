@@ -1,1 +1,42 @@
 
+Slip 7
+
+1)Write a Python program to find maximum and the minimum value in a se
+
+my_set = {15, 42, 7, 23, 89, 5}
+max_value = max(my_set)
+min_value = min(my_set)
+print("Set:", my_set)
+print("Maximum value:", max_value)
+print("Minimum value:", min_value)
+
+2) Write a Python program to mask a string such that: 
+ First and last characters remain same 
+ All middle characters are replaced by * Example Enter a string: 
+programming Masked string: p*********g
+
+string = input("Enter a string: ")
+if len(string) <= 2:
+ masked = string
+else:
+ masked = string[0] + '*' * (len(string) - 2) + string[-1]
+print("Masked string:", masked)
+
+OR
+
+2) Write a Python program to accept two numbers and perform Bitwise 
+AND, OR, NOT and XOR operations on Them.
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+bitwise_and = num1 & num2
+bitwise_or = num1 | num2
+bitwise_xor = num1 ^ num2
+bitwise_not_num1 = ~num1
+bitwise_not_num2 = ~num2
+print(f"Bitwise AND: {bitwise_and}")
+print(f"Bitwise OR: {bitwise_or}")
+print(f"Bitwise XOR: {bitwise_xor}")
+print(f"Bitwise NOT of {num1}: {bitwise_not_num1}")
+print(f"Bitwise NOT of {num2}: {bitwise_not_num2}")
+
