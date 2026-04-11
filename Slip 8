@@ -1,1 +1,54 @@
+Slip 8
 
+1) Write a Python program to merge two Python dictionaries.
+
+dict1 = {"a": 1, "b": 2, "c": 3}
+dict2 = {"d": 4, "e": 5, "f": 6}
+merged_dict = {**dict1, **dict2}
+print("Dictionary 1:", dict1)
+print("Dictionary 2:", dict2)
+print("Merged Dictionary:", merged_dict)
+
+2)2 Write a Python program to check whether a string Starts with a capital 
+letter, Ends with a digit and contain at least one special character. Display 
+appropriate messages.
+import string
+
+s = input("Enter a string: ")
+special_characters = string.punctuation
+if s[0].isupper():
+ print("String starts with a capital letter.")
+else:
+ print("String does not start with a capital letter.")
+if s[-1].isdigit():
+ print("String ends with a digit.")
+else:
+ print("String does not end with a digit.")
+if any(char in special_characters for char in s):
+ print("String contains at least one special character.")
+else:
+ print("String does not contain any special character.")
+
+OR
+
+2) Write a Python program to accepts marks of 3 subjects (Out of 100) and 
+calculate the Total and Average of the marks. Also find the grade of a students
+
+marks1 = float(input("Enter marks for subject 1: "))
+marks2 = float(input("Enter marks for subject 2: "))
+marks3 = float(input("Enter marks for subject 3: "))
+total = marks1 + marks2 + marks3
+average = total / 3
+print("Total marks:", total)
+print("Average marks:", average)
+if average >= 90:
+ grade = "A"
+elif average >= 80:
+ grade = "B"
+elif average >= 70:
+ grade = "C"
+elif average >= 60:
+grade = "D"
+else:
+ grade = "F"
+print("Grade:", grade)
