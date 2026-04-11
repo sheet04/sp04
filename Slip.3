@@ -1,0 +1,28 @@
+
+Slip 3
+1) Write a Python program to find the length of a tuple.
+
+t = (10, 20, 30, 40, 50)
+length = len(t)
+print("Tuple:", t)
+print("Length of tuple:", length)
+
+2) Write a Python program to Display multiplication table of a number.
+
+num = int(input("Enter a number: "))
+for i in range(1, 11):
+ print(num, "x", i, "=", num * i)
+
+
+OR
+
+2) Write a Python program to: accept a sentence and Display total number of 
+words and each word with its starting index.
+
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+print("Total number of words:", len(words))
+index = 0
+for word in words:
+ print(word, "starts at index", sentence.index(word, index))
+ index = sentence.index(word, index) + len(word)
