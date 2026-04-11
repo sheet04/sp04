@@ -1,7 +1,9 @@
 
 Slip 1
+
 1) Write a Python Program to Calculate the Area of a Rectangle and Circle.
 import math
+
 length = float(input("Enter the length of the rectangle: "))
 width = float(input("Enter the width of the rectangle: "))
 rectangle_area = length * width
@@ -9,8 +11,10 @@ print("Area of Rectangle =", rectangle_area)
 radius = float(input("Enter the radius of the circle: "))
 circle_area = math.pi * radius * radius
 print("Area of Circle =", circle_area)
+
 2) Write a Python program to Remove duplicate characters and Vowels from a 
 string and display the modified string.
+
 string = input("Enter a string: ")
 vowels = "aeiouAEIOU"
 result = ""
