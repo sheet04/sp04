@@ -1,1 +1,34 @@
 
+Slip 5
+
+1) Write a Python program to convert a list to a tuple.
+
+my_list = [1, 2, 3, 4, 5]
+my_tuple = tuple(my_list)
+print("List:", my_list)
+print("Tuple:", my_tuple)
+
+2) Write a Python program to Accept Three Numbers and find Minimum and 
+Maximum of these Numbers.
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+minimum = min(num1, num2, num3)
+maximum = max(num1, num2, num3)
+print("Minimum number:", minimum)
+print("Maximum number:", maximum)
+
+OR
+
+2) Write a Python function that accepts a string and calculate the number of 
+upper case letters and lower case letters.
+
+def count_case(s):
+ upper = sum(1 for c in s if c.isupper())
+ lower = sum(1 for c in s if c.islower())
+ return upper, lower
+text = input("Enter a string: ")
+upper_count, lower_count = count_case(text)
+print("Uppercase letters:", upper_count)
+print("Lowercase letters:", lower_count)
