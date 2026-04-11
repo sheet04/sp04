@@ -1,11 +1,14 @@
 1) Write a python program to replace special symbol in string with # character.
 import re
+
 string = input("Enter a string: ")
 # Replace special symbols with '#'
 modified_string = re.sub(r'[^a-zA-Z0-9 ]', '#', string)
 print("Modified string:", modified_string)
+
 2) Write a Python program to find the repeated items of a tuple and remove 
 repeated items of a tuple and display updated tuple.
+
 t = (1, 2, 3, 2, 4, 5, 1, 6, 3)
 print("Original Tuple:", t)
 repeated = set()
@@ -18,7 +21,9 @@ for item in t:
 print("Repeated items:", tuple(repeated))
 updated_tuple = tuple(set(t))
 print("Updated Tuple:", updated_tuple)
+
 OR
+
 2) Write a Python Program to Print the pattern as below
 *
 * *
