@@ -1,0 +1,47 @@
+Slip 10
+
+1) Write a Python program to define a function that counts the number of digits 
+in a given number.
+
+def count_digits(num):
+ count = 0
+ 
+ while num != 0:
+ num = num // 10
+ count += 1
+return count
+number = int(input("Enter a number: "))
+digits = count_digits(number)
+print("Number of digits:", digits) 
+
+2) Write a Python program to find number is Armstrong or not.
+
+num = int(input("Enter a number: "))
+temp = num
+sum = 0
+while num > 0:
+ digit = num % 10
+ sum = sum + digit ** 3
+ num = num // 10
+if sum == temp:
+ print(temp, "is an Armstrong number")
+else:
+ print(temp, "is not an Armstrong number")
+ 
+OR
+
+2) Write a Python program to count the number of strings where the string 
+length is 3 or more and the first and last character are same from a given list of 
+strings. 
+
+def count_strings(words):
+ count = 0
+ 
+ for word in words:
+ if len(word) >= 3 and word[0] == word[-1]:
+ count += 1
+ 
+ return count
+string_list = ['abc', 'xyz', 'aba', '1221', 'aa', 'level']
+result = count_strings(string_list)
+print("Number of matching strings:", result)
