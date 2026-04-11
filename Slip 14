@@ -1,0 +1,33 @@
+Slip 14
+
+1) Write a Python Program to Interchange First and Last Elements of in a List
+
+numbers = [10, 20, 30, 40, 50]
+print("Original List:", numbers)
+# Swapping first and last elements
+numbers[0], numbers[-1] = numbers[-1], numbers[0]
+print("List after swapping first and last elements:", numbers)
+
+2) Write a Python program to accept two strings and find common characters 
+between the two strings also check whether both strings are equal or not.
+
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+common = set(str1) & set(str2)
+print("Common characters between the two strings:", common)
+if str1 == str2:
+ print("Both strings are equal")
+else:
+ print("Both strings are not equal")
+
+OR
+
+2) Write a Python Program to Print the Fibonacci sequence .
+n = int(input("Enter number of terms: "))
+a = 0
+b = 1
+for i in range(n):
+ print(a, end=" ")
+ c = a + b
+ a = b
+ b = c
