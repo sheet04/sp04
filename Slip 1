@@ -24,3 +24,21 @@ for char in string:
  result += char
 seen.add(char)
 print("Modified string:", result)
+
+OR
+
+2) Write a Python program to get the maximum and minimum value in a 
+dictionary.
+
+my_dict = {
+ "a": 45,
+ "b": 12,
+ "c": 78,
+ "d": 34,
+ "e": 9
+}
+max_value = max(my_dict.values())
+min_value = min(my_dict.values())
+print("Dictionary:", my_dict)
+print("Maximum value:", max_value)
+print("Minimum value:", min_value)
