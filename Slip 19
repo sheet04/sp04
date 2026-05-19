@@ -1,0 +1,24 @@
+Slip 19
+
+Q1. Write Macro to check value >70
+
+Sub CheckValue()
+If Range("A1").Value > 70 Then
+MsgBox "Greater than 70"
+Else
+MsgBox "Less than or equal to 70"
+End If
+End Sub
+
+Q2. Create Gantt Chart
+Steps:
+1. Insert → Stacked Bar Chart
+2. Hide Start Date series
+3. Format chart
+
+Q3. Apply LEN(), MID(), LEFT(), RIGHT()
+
+=LEN(B2)
+=MID(B2,2,3)
+=LEFT(B2,3)
+=RIGHT(C2,3)
