@@ -1,0 +1,15 @@
+Slip 18
+
+Q1. Apply IFS() and OR()
+
+=IFS(C2>=90,"A",C2>=75,"B",TRUE,"Fail")
+=OR(C2>=90,D2>=90)
+
+Q2. Apply FILTER Function
+
+=FILTER(A2:B10,B2:B10="Science")
+
+Q3. Multiply Two Columns Using Array Formula
+
+=A1:A5*B1:B5
+Press Ctrl + Shift + Enter
