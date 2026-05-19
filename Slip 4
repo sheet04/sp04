@@ -1,0 +1,21 @@
+Slip 4
+
+Q1. Apply MID() and TRIM()
+
+=MID(B2,2,3)
+=TRIM(B2)
+
+Q2. Calculate Cube of Expenses
+
+=B2^3
+OR
+
+=POWER(B2,3)
+
+Q3. Create Pivot Table
+
+Steps:
+1. Insert → Pivot Table
+2. Subject → Rows
+3. Marks → Values
+4. Set Value Field = MAX
